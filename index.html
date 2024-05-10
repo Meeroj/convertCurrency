@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta ayrboshlash</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+
+    <h1>Valyuta ayrboshlash</h1>
+    <table id="table" class="table table-striped">
+        <thead>
+            <th>Valyuta</th>
+            <th>Miqdori</th>
+        </thead>
+        <tbody id="table-body">
+           
+        </tbody>
+    </table>
+    <div class="row">
+        <h4>Valyutani hisoblash</h4>
+        <div class="col-6 col-sm-3">
+            <label for="from-currency">Base currency</label>
+            <select id="from-currency" class="form-select"></select>
+        </div>
+        <div class="col-6 col-sm-3">
+            <label for="to-currency">Disard currency</label>
+            <select name="to-currency" id="to-currency" class="form-select"></select>
+        </div>
+        <div class="col-6 col-sm-3">
+            <label for="amount">Amount</label>
+            <input name="amount" id="amount" class="form-control">   
+        </div>
+        <div class="col-6 col-sm-3 d-flex align-items-end">
+            <button class="btn btn-success mx-3">Convert</button>
+            <h5>Result: </h5>
+        </div>
+    </div>
+</div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
